@@ -1,0 +1,22 @@
+/* CSS: Cascading styles sheets */
+/* Hoja de estilo en cascadas */
+
+/* Va de arriba hacia abajo */
+/* Entre más arriba más prioridad tiene */
+
+body {
+    /* Color de fondo */
+    /* Formato hex de colores */
+    background: hsla(48, 75%, 81%, 1);
+    background: radial-gradient(circle, hsla(48, 75%, 81%, 1) 0%, hsla(49, 58%, 87%, 1) 83%);
+
+}
+
+/* Display: flex */
+
+.todo-container {
+    display: flex;
+    /* Alinia los elementos que son flex en el eje x */
+    justify-content: center;
+    align-items: center;
+}
