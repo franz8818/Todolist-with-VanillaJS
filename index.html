@@ -4,26 +4,25 @@
 <!--Head: La metadata que va usar la web-->
 
 <head>
-
-    <!--Info que usa el navegador-->
-    <!--meta:m metadata-->
+    <!-- < metadata -> Le da información al navegador de como debe tratar nuestra página web >  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--viewport le dice al navegador que tamaño va usar-->
+    <!--viewport le dice al navegador que tamaño va usar "ancho del dispositvio"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--el titulo que sale en la pestaña-->
     <title>Todo list app</title>
+    <!--<Etiqueta link + relacion archivo(hoja de estilos) con HTML + ruta de archivo externo>-->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Body: Contenido de nuestra web-->
+<!-- <Contenido de nuestra web> -->
 
 <body>
-    <!--main: Parte principal de la web-->
+    <!-- <Parte principal de la web + selector de clases="nombre de la clase"> -->
     <main class="todo-container">
-        <!--div: Etiqueta más versatil, es lo que necesites que sea-->
+        <!-- <Etiqueta más versatil, es lo que necesites que sea> -->
         <div>
-            <!--header: titulo de visible de nuestra pagina-->
+            <!-- <titulo de nuestra página> -->
             <header>
                 <h1>
                     Mi lista de tareas
@@ -31,15 +30,16 @@
             </header>
             <!--los controladores-->
             <div>
-                <!--input: etiqueta que permite interactuar el usuario con nuestra pagina-->
+                <!-- <etiqueta donde interactua el usuario + idicador de que se desea que escriba el usuario +  > -->
                 <input placeholder="Nueva tarea" id="todo" />
-                <!--id: es el modo que tenemos de identificar un elemento en JS-->
+                <!--<Botón para hacer click + -->
                 <button id="agregar" />
                 Agregar
                 </button>
             </div>
-            <!--Lista desordenada-->
+            <!-- <etiqueta Lista desordenada + > -->
             <ul id="todo-list" />
+            <!-- <etiqueta elemento de la lista + <botón borra> -->
             <li>Tarea de prueba <button>X</button> </li>
             <li>Sacar al perro <button>X</button> </li>
             <li>Ordenar el cuarto <button>X</button> </li>
@@ -48,7 +48,7 @@
             </ul>
         </div>
     </main>
-    <!--Agregar un Script: "Vinculación con JS" -> Se le da el control de nuestra web app a JS-->
+    <!--<Etiqueta script + ruta de archivo externo="nombre archivo"></cierre script>-->
     <script src="app.js"></script>
 </body>
 

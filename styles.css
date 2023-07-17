@@ -1,22 +1,22 @@
-/* CSS: Cascading styles sheets */
-/* Hoja de estilo en cascadas */
-
-/* Va de arriba hacia abajo */
-/* Entre más arriba más prioridad tiene */
-
+/* nombre de la etiqueta {estilo} */
 body {
-    /* Color de fondo */
-    /* Formato hex de colores */
+    /* Color de fondo + formato de colores */
     background: hsla(48, 75%, 81%, 1);
     background: radial-gradient(circle, hsla(48, 75%, 81%, 1) 0%, hsla(49, 58%, 87%, 1) 83%);
 
 }
 
-/* Display: flex */
-
+/* nombre de la clase {estilo} */
 .todo-container {
+    /* display flex -> Posicionar los elementos del modo que queramos */
     display: flex;
-    /* Alinia los elementos que son flex en el eje x */
+
+    /* Alinia los elementos que son flex en el eje x(horizontal) */
     justify-content: center;
+
+    /* Centra el elemento en medio de nuestra pagina o en bloque contenedor */
     align-items: center;
+
+    /* Definir altura de el elemento centrado por "align-items: center;"  */
+    min-height: 100vh;
 }
